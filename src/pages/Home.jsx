@@ -15,7 +15,6 @@ import data from '../data.json';
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState(null);
   const [currentReview, setCurrentReview] = useState(0);
-  const [tallyKey, setTallyKey] = useState(0);
 
   const numReviewPages = Math.ceil(data.reviews.length / 3);
 
@@ -25,16 +24,6 @@ export default function Home() {
     }, 8000);
     return () => clearInterval(timer);
   }, [numReviewPages]);
-
-  useEffect(() => {
-    const handleMessage = (e) => {
-      if (e.data && e.data.event === 'Tally.FormSubmitted') {
-        setTimeout(() => setTallyKey(prev => prev + 1), 3000);
-      }
-    };
-    window.addEventListener('message', handleMessage);
-    return () => window.removeEventListener('message', handleMessage);
-  }, []);
 
   return (
     <div className="page-wrapper">
@@ -63,17 +52,31 @@ export default function Home() {
             </div>
           </div>
           <div className="quick-booking">
-            <iframe 
-              key={tallyKey}
-              src="https://tally.so/embed/jaLvNR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-              loading="lazy" 
-              width="100%" 
-              height="542" 
-              frameBorder="0" 
-              marginHeight="0" 
-              marginWidth="0" 
-              title="Request an Appointment"
-            ></iframe>
+            <h3>Request an Appointment</h3>
+            <form onSubmit={(e) => { e.preventDefault(); alert('Booking request sent! (Visual Demo)'); }}>
+              <div className="form-group">
+                <label>Full Name</label>
+                <input type="text" className="form-control" placeholder="John Doe" />
+              </div>
+              <div className="form-group">
+                <label>Phone Number</label>
+                <input type="tel" className="form-control" placeholder="(555) 000-0000" />
+              </div>
+              <div className="form-group">
+                <label>Service Needed</label>
+                <select className="form-control">
+                  {data.services.map(s => <option key={s.id}>{s.title}</option>)}
+                  <option>Other</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <label>Preferred Date</label>
+                <input type="date" className="form-control" />
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Confirm Request <ChevronRight size={18} />
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -101,27 +104,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="about-section">
-        <div className="container">
-          <div className="about-grid">
-            <div className="about-image">
-              <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=2000&auto=format&fit=crop" alt="Mechanic at work" />
-            </div>
-            <div className="about-content">
-              <div className="badge">About Us</div>
-              <h2>A Legacy of Quality Service</h2>
-              <blockquote>
-                <Quote size={48} className="quote-icon" />
-                <p>"{data.about.text}"</p>
-                <footer>
-                  <strong>{data.about.owner}</strong>
-                  <span>{data.about.title}</span>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <section className="reviews-section">
         <div className="container">

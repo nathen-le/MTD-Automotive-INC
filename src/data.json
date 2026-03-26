@@ -7,73 +7,128 @@
     "mapCode": "X287+5C Lawrenceville, Georgia"
   },
   "hours": [
-    { "day": "Monday", "time": "8 AM–5:30 PM" },
-    { "day": "Tuesday", "time": "8 AM–5:30 PM" },
-    { "day": "Wednesday", "time": "8 AM–5:30 PM" },
-    { "day": "Thursday", "time": "8 AM–5:30 PM" },
-    { "day": "Friday", "time": "8 AM–5:30 PM" },
-    { "day": "Saturday", "time": "Closed" },
-    { "day": "Sunday", "time": "Closed" }
+    {
+      "day": "Monday",
+      "time": "8 AM–5:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "time": "8 AM–5:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "time": "8 AM–5:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "time": "8 AM–5:30 PM"
+    },
+    {
+      "day": "Friday",
+      "time": "8 AM–5:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "time": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "time": "Closed"
+    }
   ],
   "about": {
     "owner": "Michael D.",
     "title": "Business Owner",
-    "text": "We are a family, locally owned shop who have grown our business based on our honest, and up front business principals and practices. Call us today, to learn more about how we have stayed in business for over 34 years serving the Greater Gwinnett area."
+    "text": "MTD Automotive INC in Lawrenceville emerges as a trusted, go-to auto mechanic for \"all mechanic work.\" Neighbors highlight it as the \"best place\" for comprehensive service, emphasizing \"good prices\" that stand out compared with pricey national chains. In a landscape where some residents feel they \"didn't trust\" other shops or had \"huge mistake\" experiences elsewhere, MTD Automotive is positioned as a reliable, affordable alternative for tune-ups, ignition coil replacement, and general repairs on used cars and older models. Its reputation within the community makes it a particularly appealing option for families seeking a trustworthy shop for their children's vehicles. For residents moving into the area or returning to Lawrenceville, MTD Automotive functions as a hidden gem that can fill the gap left by long-time, trusted mechanics."
   },
   "faq": [
     {
-      "question": "Do you offer warranties on your repairs?",
-      "answer": "Yes, we stand behind our work with a 12-month/12,000-mile nationwide warranty on all qualifying parts and labor."
+      "question": "How often should I get an oil change?",
+      "answer": "place text here"
     },
     {
-      "question": "Can I get an estimate before authorizing repairs?",
-      "answer": "Absolutely. We provide upfront, transparent digital inspections and estimates before any work begins so there are no surprises."
+      "question": "Why is my check engine light on?",
+      "answer": "place text here"
     },
     {
-      "question": "Do I need an appointment or do you take walk-ins?",
-      "answer": "While we gladly accept walk-ins, we highly recommend making an appointment to ensure prompt service, especially for larger repairs."
+      "question": "My car is making unusual noises. What should I do?",
+      "answer": "place text here"
     },
     {
-      "question": "Will you use OEM parts for my vehicle?",
-      "answer": "We use high-quality OEM or premium aftermarket parts that meet or exceed manufacturer specifications, depending on your preference and budget."
+      "question": "How can I tell if my brakes need to be replaced?",
+      "answer": "place text here"
+    },
+    {
+      "question": "What should I do if my battery keeps dying?",
+      "answer": "place text here"
+    },
+    {
+      "question": "How often should I rotate my tires?",
+      "answer": "place text here"
+    },
+    {
+      "question": "Do you perform diagnostics for warning lights?",
+      "answer": "place text here"
+    },
+    {
+      "question": "Is it necessary to use OEM parts for repairs?",
+      "answer": "place text here"
     }
   ],
   "reviews": [
     {
       "id": 1,
-      "author": "Sarah Jenkins",
+      "author": "Annie X.",
       "rating": 5,
-      "text": "MTD Automotive is simply the best in Gwinnett. They diagnosed my transmission issue quickly and didn't try to upsell me on things I didn't need. Honest and reliable!"
+      "text": "I can’t say enough good things about this shop. From start to finish, the entire team was professional, honest, and easy to work with. They took the time to explain everything and you can tell they care about their work and their customers."
     },
     {
       "id": 2,
-      "author": "David R.",
+      "author": "Arborsaving Tree Care",
       "rating": 5,
-      "text": "I've been taking all my family's cars to Michael and his team for 10 years. They are always upfront about costs and the work is done right the first time."
+      "text": "Fantastic Service! They fixed my axle quickly and for a great price. Mike and his team were helpful and professional. I'll definitely be bringing my car back here for all future service!"
     },
     {
       "id": 3,
-      "author": "Amanda C.",
+      "author": "Chris Cragin",
       "rating": 5,
-      "text": "Extremely professional and courteous staff. I loved the digital inspection report they sent me showing exactly what needed to be fixed. Highly recommend!"
+      "text": "Thanks to Mike and his team. I recently brought my truck in because it was failing the emissions test, and several problems were identified, including a lean-running engine and a faulty component."
     },
     {
       "id": 4,
-      "author": "Robert T.",
+      "author": "Ezekiel Jackson",
       "rating": 5,
-      "text": "Best prices in town and the mechanics are actually willing to explain things without being condescending. My go-to auto shop!"
+      "text": "Mike, the owner, is excellent to work with. He walked me through the process of installing a new engine in my Hummer H2. Casper performed the swap and did an excellent job. The front desk staff are very pleasant and helpful."
     },
     {
       "id": 5,
-      "author": "Elena M.",
+      "author": "Cheryl Scott",
       "rating": 5,
-      "text": "They repaired my AC right before a big road trip in the summer heat. Fast service, very transparent pricing, and wonderful staff."
+      "text": "Can’t recommend this shop enough. My first visit was in 2023, and I was very impressed when the tech brought me back to the bay to show exactly which parts needed replacing and why."
     },
     {
       "id": 6,
-      "author": "James W.",
-      "rating": 4,
-      "text": "Got an oil change and tire rotation. Super quick and they even topped off my fluids for free. Friendly waiting area too."
+      "author": "Derrick Vu",
+      "rating": 5,
+      "text": "Mike was very insightful and helpful when I came by last week. He was honest about maintenance and repairs I needed, and the service I received was timely and thorough."
+    },
+    {
+      "id": 7,
+      "author": "Tony Davidson",
+      "rating": 5,
+      "text": "Good people, good service, good prices. MTD will be your new neighborhood mechanic. They've worked on three of my family's vehicles and we couldn't be happier. Mike and Robby will treat you right."
+    },
+    {
+      "id": 8,
+      "author": "Nicole Arcand",
+      "rating": 5,
+      "text": "Robby has worked on my cars since I could drive. He takes time to explain, is honest and helpful. In an industry where women are easily overcharged or misled, Robby and MTD Automotive have always taken care of everything fairly."
+    },
+    {
+      "id": 9,
+      "author": "Kelvin Ball",
+      "rating": 5,
+      "text": "One of the best places recommended to me. My wife's car was repeatedly in and out of the Lexus dealer with the check engine light on. They fixed it the first time at a much cheaper price! Worth the hour drive!"
     }
   ],
   "services": [
@@ -81,37 +136,67 @@
       "id": "general",
       "title": "General Maintenance",
       "description": "Regular check-ups, oil changes, fluid flushes, and filter replacements to extend your vehicle's lifespan.",
-      "icon": "Car"
+      "icon": "Car",
+      "priceRange": "$45 - $150",
+      "detailedDescription": "Our general maintenance package includes comprehensive multi-point inspections, synthetic or conventional oil changes, and fluid top-offs. Staying on top of your maintenance schedule is the easiest way to prevent costly repairs down the road.",
+      "requiredItems": ["Your vehicle's manual (if available)", "Maintenance records for existing warranties"],
+      "pricingExplanation": "Pricing varies based on oil type (synthetic vs. conventional) and the specific filters required by your vehicle's manufacturer.",
+      "image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2072&auto=format&fit=crop"
     },
     {
       "id": "diagnostics",
       "title": "Engine Diagnostics",
       "description": "Advanced computer diagnostics to quickly and accurately identify any engine or electrical issues.",
-      "icon": "Gauge"
+      "icon": "Gauge",
+      "priceRange": "$90 - $120",
+      "detailedDescription": "When your check engine light comes on, our certified technicians use state-of-the-art diagnostic scanners to pull codes and perform pinpoint testing to uncover the exact cause of your issue.",
+      "requiredItems": ["List of any symptoms or strange noises you've noticed", "Information on when the warning lights appeared"],
+      "pricingExplanation": "Diagnostic fees cover the initial hooking up to the scanner and up to one hour of targeted diagnostic labor. If repairs are completed with us, a portion may be credited.",
+      "image": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2070&auto=format&fit=crop"
     },
     {
       "id": "brakes",
       "title": "Brake Services",
       "description": "Complete brake system inspection, pad replacement, rotor resurfacing, and fluid services.",
-      "icon": "Settings"
+      "icon": "Settings",
+      "priceRange": "$150 - $450",
+      "detailedDescription": "Don't compromise on safety. Our brake services include free visual inspections, high-quality ceramic or semi-metallic pad installations, and precise rotor resurfacing or replacements.",
+      "requiredItems": ["Nothing special required, just bring your vehicle in!"],
+      "pricingExplanation": "Cost depends heavily on whether rotors can be machined or must be entirely replaced, and which wheels require service (front, rear, or all four).",
+      "image": "https://images.unsplash.com/photo-1632823471565-1eca1477dfbc?q=80&w=2070&auto=format&fit=crop"
     },
     {
       "id": "electrical",
       "title": "Electrical Systems",
       "description": "Battery testing, alternator repair, starter replacement, and complete electrical system diagnosis.",
-      "icon": "BatteryCharging"
+      "icon": "BatteryCharging",
+      "priceRange": "$80 - $350+",
+      "detailedDescription": "Modern cars rely heavily on complex electrical architectures. From simple dead batteries to complex wiring shorts and alternator failures, our technicians can get you powered up again.",
+      "requiredItems": ["Any aftermarket electrical accessories you recently installed"],
+      "pricingExplanation": "Batteries and starters usually have fixed pricing based on the car's make and model. Deep wiring diagnostics are billed hourly.",
+      "image": "https://images.unsplash.com/photo-1542382156909-9ae37b3f56fd?q=80&w=2070&auto=format&fit=crop"
     },
     {
       "id": "transmission",
       "title": "Transmission Repair",
       "description": "Expert transmission servicing, slipping gears repair, fluid changes, and total rebuilds.",
-      "icon": "Wrench"
+      "icon": "Wrench",
+      "priceRange": "$180 - $3000+",
+      "detailedDescription": "Transmission work ranges from a simple 30,000-mile fluid flush to a total mechanical rebuild. We provide transparent estimates and robust warranty options for transmission replacements.",
+      "requiredItems": ["Towing might be required if the car is slipping heavily"],
+      "pricingExplanation": "Fluid flushes and filter changes are on the lower end. Full rebuilds or new transmission installations are high-labor and high-parts-cost jobs.",
+      "image": "https://images.unsplash.com/photo-1533558701576-23c65e0272fb?q=80&w=1974&auto=format&fit=crop"
     },
     {
       "id": "climate",
       "title": "A/C & Heating",
       "description": "Climate control system inspections, refrigerant recharges, leak detection, and compressor repair.",
-      "icon": "CheckCircle2"
+      "icon": "CheckCircle2",
+      "priceRange": "$100 - $800",
+      "detailedDescription": "Stay comfortable year-round. We inspect hoses, replace cabin air filters, recharge Freon, and replace faulty AC compressors and heating cores.",
+      "requiredItems": ["Information on if the system blows warm or has a strange odor"],
+      "pricingExplanation": "Simple AC recharges are very affordable. Replacing a damaged compressor or tracking down micro-leaks takes more labor and expensive parts.",
+      "image": "https://images.unsplash.com/photo-1563720223185-11003d5169a5?q=80&w=1974&auto=format&fit=crop"
     }
   ],
   "gallery": [
