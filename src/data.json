@@ -56,6 +56,24 @@
       "author": "Amanda C.",
       "rating": 5,
       "text": "Extremely professional and courteous staff. I loved the digital inspection report they sent me showing exactly what needed to be fixed. Highly recommend!"
+    },
+    {
+      "id": 4,
+      "author": "Robert T.",
+      "rating": 5,
+      "text": "Best prices in town and the mechanics are actually willing to explain things without being condescending. My go-to auto shop!"
+    },
+    {
+      "id": 5,
+      "author": "Elena M.",
+      "rating": 5,
+      "text": "They repaired my AC right before a big road trip in the summer heat. Fast service, very transparent pricing, and wonderful staff."
+    },
+    {
+      "id": 6,
+      "author": "James W.",
+      "rating": 4,
+      "text": "Got an oil change and tire rotation. Super quick and they even topped off my fluids for free. Friendly waiting area too."
     }
   ],
   "services": [

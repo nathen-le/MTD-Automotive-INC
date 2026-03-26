@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   CalendarCheck, 
   ChevronRight, 
@@ -13,6 +14,27 @@ import data from '../data.json';
 
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState(null);
+  const [currentReview, setCurrentReview] = useState(0);
+  const [tallyKey, setTallyKey] = useState(0);
+
+  const numReviewPages = Math.ceil(data.reviews.length / 3);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentReview((prev) => (prev + 1) % numReviewPages);
+    }, 8000);
+    return () => clearInterval(timer);
+  }, [numReviewPages]);
+
+  useEffect(() => {
+    const handleMessage = (e) => {
+      if (e.data && e.data.event === 'Tally.FormSubmitted') {
+        setTimeout(() => setTallyKey(prev => prev + 1), 3000);
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
 
   return (
     <div className="page-wrapper">
@@ -20,14 +42,14 @@ export default function Home() {
         <div className="hero-background"></div>
         <div className="container">
           <div className="hero-content">
-            <div className="badge">⭐ Premium Auto Care</div>
+            {/* Removed badge */}
             <h1>Expert Auto Repair You Can <span>Trust.</span></h1>
             <p>We provide full-service automotive repair and maintenance with certified technicians and state-of-the-art diagnostic equipment. Your car is in the best hands.</p>
             <div className="hero-buttons">
-              <button className="btn btn-primary pulse-glow">
-                <CalendarCheck size={20} />
-                Schedule Service
-              </button>
+              <Link to="/services" className="btn btn-primary pulse-glow">
+                <Car size={20} />
+                View Services
+              </Link>
             </div>
             <div className="hero-stats">
               <div className="stat-item">
@@ -41,31 +63,17 @@ export default function Home() {
             </div>
           </div>
           <div className="quick-booking">
-            <h3>Request an Appointment</h3>
-            <form onSubmit={(e) => e.preventDefault()}>
-              <div className="form-group">
-                <label>Full Name</label>
-                <input type="text" className="form-control" placeholder="John Doe" />
-              </div>
-              <div className="form-group">
-                <label>Phone Number</label>
-                <input type="tel" className="form-control" placeholder="(555) 000-0000" />
-              </div>
-              <div className="form-group">
-                <label>Service Needed</label>
-                <select className="form-control">
-                  {data.services.map(s => <option key={s.id}>{s.title}</option>)}
-                  <option>Other</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label>Preferred Date</label>
-                <input type="date" className="form-control" />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Confirm Request <ChevronRight size={18} />
-              </button>
-            </form>
+            <iframe 
+              key={tallyKey}
+              src="https://tally.so/embed/jaLvNR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+              loading="lazy" 
+              width="100%" 
+              height="542" 
+              frameBorder="0" 
+              marginHeight="0" 
+              marginWidth="0" 
+              title="Request an Appointment"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -76,7 +84,7 @@ export default function Home() {
             <div className="feature-icon-wrapper">
               <CheckCircle2 size={24} />
             </div>
-            ASE Certified Mechanics
+            Experienced Technicians
           </div>
           <div className="feature-item">
             <div className="feature-icon-wrapper">
@@ -88,7 +96,7 @@ export default function Home() {
             <div className="feature-icon-wrapper">
               <Star size={24} />
             </div>
-            12-Month Guarantee
+            Honest & Reliable Service
           </div>
         </div>
       </div>
@@ -115,42 +123,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="gallery-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="badge">Our Shop</div>
-            <h2>Facility Gallery</h2>
-            <p>Take a look at our state-of-the-art facility and our team in action.</p>
-          </div>
-          <div className="gallery-grid">
-            {data.gallery.map(img => (
-              <div key={img.id} className="gallery-item">
-                <img src={img.src} alt={img.alt} />
-                <div className="gallery-overlay">
-                  <span>{img.alt}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="reviews-section">
         <div className="container">
           <div className="section-header">
             <div className="badge">Testimonials</div>
-            <h2>What Our Client Say</h2>
+            <h2>What Our Clients Say</h2>
           </div>
-          <div className="reviews-grid">
-            {data.reviews.map(review => (
-              <div key={review.id} className="review-card">
-                <div className="stars">
-                  {[...Array(review.rating)].map((_, i) => <Star key={i} size={18} fill="var(--color-primary)" color="var(--color-primary)"/>)}
+          <div className="reviews-slider-container wide">
+            <div className="reviews-grid-slider" key={currentReview}>
+              {data.reviews.slice(currentReview * 3, currentReview * 3 + 3).map(review => (
+                <div key={review.id} className="review-card slider-card">
+                  <div className="stars">
+                    {[...Array(review.rating)].map((_, i) => <Star key={i} size={18} fill="var(--color-primary)" color="var(--color-primary)"/>)}
+                  </div>
+                  <p>"{review.text}"</p>
+                  <div className="review-author">- {review.author}</div>
                 </div>
-                <p>"{review.text}"</p>
-                <div className="review-author">- {review.author}</div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="slider-dots">
+              {Array.from({ length: numReviewPages }).map((_, idx) => (
+                <button 
+                  key={idx} 
+                  className={`dot ${currentReview === idx ? 'active' : ''}`}
+                  onClick={() => setCurrentReview(idx)}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
