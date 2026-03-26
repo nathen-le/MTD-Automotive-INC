@@ -1,0 +1,131 @@
+{
+  "companyName": "MTD Automotive Inc.",
+  "contact": {
+    "phone": "+1 770-962-8575",
+    "address": "304 Buford Dr, Lawrenceville, GA 30046",
+    "addressLink": "https://maps.google.com/?q=X287+5C+Lawrenceville,+Georgia",
+    "mapCode": "X287+5C Lawrenceville, Georgia"
+  },
+  "hours": [
+    { "day": "Monday", "time": "8 AM–5:30 PM" },
+    { "day": "Tuesday", "time": "8 AM–5:30 PM" },
+    { "day": "Wednesday", "time": "8 AM–5:30 PM" },
+    { "day": "Thursday", "time": "8 AM–5:30 PM" },
+    { "day": "Friday", "time": "8 AM–5:30 PM" },
+    { "day": "Saturday", "time": "Closed" },
+    { "day": "Sunday", "time": "Closed" }
+  ],
+  "about": {
+    "owner": "Michael D.",
+    "title": "Business Owner",
+    "text": "We are a family, locally owned shop who have grown our business based on our honest, and up front business principals and practices. Call us today, to learn more about how we have stayed in business for over 34 years serving the Greater Gwinnett area."
+  },
+  "faq": [
+    {
+      "question": "Do you offer warranties on your repairs?",
+      "answer": "Yes, we stand behind our work with a 12-month/12,000-mile nationwide warranty on all qualifying parts and labor."
+    },
+    {
+      "question": "Can I get an estimate before authorizing repairs?",
+      "answer": "Absolutely. We provide upfront, transparent digital inspections and estimates before any work begins so there are no surprises."
+    },
+    {
+      "question": "Do I need an appointment or do you take walk-ins?",
+      "answer": "While we gladly accept walk-ins, we highly recommend making an appointment to ensure prompt service, especially for larger repairs."
+    },
+    {
+      "question": "Will you use OEM parts for my vehicle?",
+      "answer": "We use high-quality OEM or premium aftermarket parts that meet or exceed manufacturer specifications, depending on your preference and budget."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Sarah Jenkins",
+      "rating": 5,
+      "text": "MTD Automotive is simply the best in Gwinnett. They diagnosed my transmission issue quickly and didn't try to upsell me on things I didn't need. Honest and reliable!"
+    },
+    {
+      "id": 2,
+      "author": "David R.",
+      "rating": 5,
+      "text": "I've been taking all my family's cars to Michael and his team for 10 years. They are always upfront about costs and the work is done right the first time."
+    },
+    {
+      "id": 3,
+      "author": "Amanda C.",
+      "rating": 5,
+      "text": "Extremely professional and courteous staff. I loved the digital inspection report they sent me showing exactly what needed to be fixed. Highly recommend!"
+    }
+  ],
+  "services": [
+    {
+      "id": "general",
+      "title": "General Maintenance",
+      "description": "Regular check-ups, oil changes, fluid flushes, and filter replacements to extend your vehicle's lifespan.",
+      "icon": "Car"
+    },
+    {
+      "id": "diagnostics",
+      "title": "Engine Diagnostics",
+      "description": "Advanced computer diagnostics to quickly and accurately identify any engine or electrical issues.",
+      "icon": "Gauge"
+    },
+    {
+      "id": "brakes",
+      "title": "Brake Services",
+      "description": "Complete brake system inspection, pad replacement, rotor resurfacing, and fluid services.",
+      "icon": "Settings"
+    },
+    {
+      "id": "electrical",
+      "title": "Electrical Systems",
+      "description": "Battery testing, alternator repair, starter replacement, and complete electrical system diagnosis.",
+      "icon": "BatteryCharging"
+    },
+    {
+      "id": "transmission",
+      "title": "Transmission Repair",
+      "description": "Expert transmission servicing, slipping gears repair, fluid changes, and total rebuilds.",
+      "icon": "Wrench"
+    },
+    {
+      "id": "climate",
+      "title": "A/C & Heating",
+      "description": "Climate control system inspections, refrigerant recharges, leak detection, and compressor repair.",
+      "icon": "CheckCircle2"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "src": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1974&auto=format&fit=crop",
+      "alt": "Mechanic working on an engine"
+    },
+    {
+      "id": 2,
+      "src": "https://images.unsplash.com/photo-1503378574488-87fb7395e54d?q=80&w=2070&auto=format&fit=crop",
+      "alt": "Modern auto repair garage"
+    },
+    {
+      "id": 3,
+      "src": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2070&auto=format&fit=crop",
+      "alt": "Professional vehicle diagnostic"
+    },
+    {
+      "id": 4,
+      "src": "https://images.unsplash.com/photo-1632823471565-1eca1477dfbc?q=80&w=2070&auto=format&fit=crop",
+      "alt": "Car on a lift"
+    },
+    {
+      "id": 5,
+      "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2072&auto=format&fit=crop",
+      "alt": "Oil change service"
+    },
+    {
+      "id": 6,
+      "src": "https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1974&auto=format&fit=crop",
+      "alt": "Tire alignment"
+    }
+  ]
+}
