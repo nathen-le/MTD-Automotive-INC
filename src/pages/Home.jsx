@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  CalendarCheck, 
   ChevronRight, 
   Star, 
   Car, 
   CheckCircle2,
-  Quote,
   Plus,
   Minus
 } from 'lucide-react';

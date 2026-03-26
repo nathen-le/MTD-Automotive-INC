@@ -198,37 +198,5 @@
       "pricingExplanation": "Simple AC recharges are very affordable. Replacing a damaged compressor or tracking down micro-leaks takes more labor and expensive parts.",
       "image": "https://images.unsplash.com/photo-1563720223185-11003d5169a5?q=80&w=1974&auto=format&fit=crop"
     }
-  ],
-  "gallery": [
-    {
-      "id": 1,
-      "src": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1974&auto=format&fit=crop",
-      "alt": "Mechanic working on an engine"
-    },
-    {
-      "id": 2,
-      "src": "https://images.unsplash.com/photo-1503378574488-87fb7395e54d?q=80&w=2070&auto=format&fit=crop",
-      "alt": "Modern auto repair garage"
-    },
-    {
-      "id": 3,
-      "src": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2070&auto=format&fit=crop",
-      "alt": "Professional vehicle diagnostic"
-    },
-    {
-      "id": 4,
-      "src": "https://images.unsplash.com/photo-1632823471565-1eca1477dfbc?q=80&w=2070&auto=format&fit=crop",
-      "alt": "Car on a lift"
-    },
-    {
-      "id": 5,
-      "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2072&auto=format&fit=crop",
-      "alt": "Oil change service"
-    },
-    {
-      "id": 6,
-      "src": "https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1974&auto=format&fit=crop",
-      "alt": "Tire alignment"
-    }
   ]
 }
